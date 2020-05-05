@@ -723,6 +723,14 @@ Begin VB.Form Form1
          Caption         =   "종료(&X)"
       End
    End
+   Begin VB.Menu mnuOptions 
+      Caption         =   "옵션(&O)"
+      Visible         =   0   'False
+      Begin VB.Menu mnuOptionsLoop 
+         Caption         =   "반복(&L)"
+         Checked         =   -1  'True
+      End
+   End
    Begin VB.Menu help 
       Caption         =   "도움말(&H)"
       Begin VB.Menu log 
@@ -856,15 +864,15 @@ End Sub
 Private Sub Form_Load()
 On Error Resume Next
     vi = 0
-    File1.Path = "C:\WINDOWS\MEDIA\"
-    Text1.Text = "C:\WINDOWS\MEDIA\"
+    File1.Path = GetSetting(App.Title, "Config", "Path", "C:\WINDOWS\MEDIA\")
+    Text1.Text = GetSetting(App.Title, "Config", "Path", "C:\WINDOWS\MEDIA\")
     Slider1.Value = 0
     'status.Caption = "0"
     mplayer.settings.setMode "loop", True
     mplayer.settings.mute = False
     mutev.Caption = "1"
     ToggleButton1.Caption = "◀))"
-    Dir1.Path = "C:\WINDOWS\MEDIA\"
+    Dir1.Path = GetSetting(App.Title, "Config", "Path", "C:\WINDOWS\MEDIA\")
     mplayer.enableContextMenu = False
 End Sub
 
@@ -875,6 +883,10 @@ Me.WindowState = 0
 End If
     Me.Width = 10500
     Me.Height = 7125
+End Sub
+
+Private Sub Form_Unload(Cancel As Integer)
+    SaveSetting App.Title, "Config", "Path", Text1.Text
 End Sub
 
 Private Sub go_Click()
@@ -937,6 +949,11 @@ End Sub
 
 Private Sub log_Click()
     ulog.Show
+End Sub
+
+Private Sub mnuOptionsLoop_Click()
+    mnuOptionsLoop.Checked = Not mnuOptionsLoop.Checked
+    mplayer.settings.setMode "loop", mnuOptionsLoop.Checked
 End Sub
 
 Private Sub mplayer_MediaChange(ByVal Item As Object)
