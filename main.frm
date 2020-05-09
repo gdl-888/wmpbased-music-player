@@ -3,87 +3,87 @@ Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "COMCTL32.OCX"
 Object = "{6BF52A50-394A-11D3-B153-00C04F79FAA6}#1.0#0"; "wmp.dll"
 Begin VB.Form Form1 
    Caption         =   "오디오 재생기"
-   ClientHeight    =   6060
+   ClientHeight    =   6135
    ClientLeft      =   225
    ClientTop       =   870
-   ClientWidth     =   10170
+   ClientWidth     =   10080
    Icon            =   "main.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
-   ScaleHeight     =   6060
-   ScaleWidth      =   10170
+   ScaleHeight     =   6135
+   ScaleWidth      =   10080
    StartUpPosition =   3  'Windows 기본값
    Begin VB.Frame Frame1 
       Height          =   2295
       Left            =   120
-      TabIndex        =   35
+      TabIndex        =   30
       Top             =   2880
       Width           =   4695
       Begin VB.TextBox txtLyr 
          BackColor       =   &H8000000F&
          Height          =   1935
-         Left            =   2400
+         Left            =   2160
          Locked          =   -1  'True
          MultiLine       =   -1  'True
          ScrollBars      =   2  '수직
-         TabIndex        =   43
+         TabIndex        =   38
          Top             =   240
-         Width           =   2175
+         Width           =   2415
       End
       Begin VB.Label lblG 
          Height          =   255
          Left            =   120
-         TabIndex        =   40
+         TabIndex        =   35
          Top             =   1680
-         Width           =   2175
+         Width           =   2000
       End
       Begin VB.Label lblSP 
          Height          =   255
          Left            =   120
-         TabIndex        =   41
+         TabIndex        =   36
          Top             =   1440
-         Width           =   2175
+         Width           =   2000
       End
       Begin VB.Label lblLP 
          Height          =   255
          Left            =   120
-         TabIndex        =   42
+         TabIndex        =   37
          Top             =   1200
-         Width           =   2175
+         Width           =   2000
       End
       Begin VB.Label lblYear 
          Height          =   255
          Left            =   120
-         TabIndex        =   39
+         TabIndex        =   34
          Top             =   960
-         Width           =   2175
+         Width           =   2000
       End
       Begin VB.Label lblAlbum 
          Height          =   255
          Left            =   120
-         TabIndex        =   37
+         TabIndex        =   32
          Top             =   720
-         Width           =   2175
+         Width           =   2000
       End
       Begin VB.Label lblTrackNumber 
          Height          =   255
          Left            =   120
-         TabIndex        =   38
+         TabIndex        =   33
          Top             =   480
-         Width           =   2175
+         Width           =   2000
       End
       Begin VB.Label lblArtist 
          Height          =   255
          Left            =   120
-         TabIndex        =   36
+         TabIndex        =   31
          Top             =   240
-         Width           =   2175
+         Width           =   2000
       End
    End
    Begin ComctlLib.Slider Slider1 
       Height          =   375
       Left            =   5040
-      TabIndex        =   34
+      TabIndex        =   29
       Top             =   2400
       Width           =   4935
       _ExtentX        =   8705
@@ -91,19 +91,19 @@ Begin VB.Form Form1
       _Version        =   327682
    End
    Begin VB.Timer timSBManager 
-      Left            =   8760
-      Top             =   3000
+      Left            =   10440
+      Top             =   1800
    End
    Begin VB.Timer timVizManager 
       Interval        =   90
-      Left            =   8760
-      Top             =   2640
+      Left            =   10440
+      Top             =   1440
    End
    Begin VB.CommandButton CommandButton7 
       Caption         =   "60>"
       Height          =   375
       Left            =   8400
-      TabIndex        =   32
+      TabIndex        =   27
       Top             =   1920
       Width           =   495
    End
@@ -111,7 +111,7 @@ Begin VB.Form Form1
       Caption         =   "30>"
       Height          =   375
       Left            =   7920
-      TabIndex        =   31
+      TabIndex        =   26
       Top             =   1920
       Width           =   495
    End
@@ -119,7 +119,7 @@ Begin VB.Form Form1
       Caption         =   "10>"
       Height          =   375
       Left            =   7440
-      TabIndex        =   30
+      TabIndex        =   25
       Top             =   1920
       Width           =   495
    End
@@ -127,7 +127,7 @@ Begin VB.Form Form1
       Caption         =   "<10"
       Height          =   375
       Left            =   6960
-      TabIndex        =   29
+      TabIndex        =   24
       Top             =   1920
       Width           =   495
    End
@@ -135,7 +135,7 @@ Begin VB.Form Form1
       Caption         =   "<30"
       Height          =   375
       Left            =   6480
-      TabIndex        =   28
+      TabIndex        =   23
       Top             =   1920
       Width           =   495
    End
@@ -143,7 +143,7 @@ Begin VB.Form Form1
       Caption         =   "<60"
       Height          =   375
       Left            =   6000
-      TabIndex        =   27
+      TabIndex        =   22
       Top             =   1920
       Width           =   495
    End
@@ -151,7 +151,7 @@ Begin VB.Form Form1
       Caption         =   "▲"
       Height          =   255
       Left            =   9600
-      TabIndex        =   19
+      TabIndex        =   14
       Top             =   3240
       Width           =   375
    End
@@ -159,31 +159,31 @@ Begin VB.Form Form1
       Caption         =   "▼"
       Height          =   255
       Left            =   9600
-      TabIndex        =   18
+      TabIndex        =   13
       Top             =   5280
       Width           =   375
    End
    Begin ComctlLib.Slider Slider2 
       Height          =   1815
       Left            =   9480
-      TabIndex        =   16
+      TabIndex        =   12
       Top             =   3480
-      Width           =   495
-      _ExtentX        =   873
+      Width           =   435
+      _ExtentX        =   767
       _ExtentY        =   3201
       _Version        =   327682
       Orientation     =   1
       Max             =   100
-      SelStart        =   100
+      SelStart        =   50
       TickStyle       =   1
       TickFrequency   =   0
-      Value           =   100
+      Value           =   50
    End
    Begin VB.DirListBox Dir1 
       BackColor       =   &H00FFFFFF&
       Height          =   2190
       Left            =   2640
-      TabIndex        =   15
+      TabIndex        =   11
       Top             =   480
       Width           =   2295
    End
@@ -192,9 +192,9 @@ Begin VB.Form Form1
       Height          =   375
       Left            =   0
       TabIndex        =   9
-      Top             =   5685
-      Width           =   10170
-      _ExtentX        =   17939
+      Top             =   5760
+      Width           =   10080
+      _ExtentX        =   17780
       _ExtentY        =   661
       Style           =   1
       SimpleText      =   "준비"
@@ -210,8 +210,8 @@ Begin VB.Form Form1
    Begin VB.Timer Timer1 
       Enabled         =   0   'False
       Interval        =   250
-      Left            =   8760
-      Top             =   3360
+      Left            =   10440
+      Top             =   2160
    End
    Begin VB.CommandButton Command1 
       Caption         =   "열기(&O)"
@@ -249,11 +249,87 @@ Begin VB.Form Form1
    Begin VB.FileListBox File1 
       BackColor       =   &H00FFFFFF&
       Height          =   2250
+      Hidden          =   -1  'True
       Left            =   120
       Pattern         =   "*.mp3;*.mid;*.wma;*.rmi;*.midi;*.mp1;*.mp2;*.mpg;*.mpeg;*.wav;*.wave;*.midi;*.rmi;*.wpl;*.aac;*.amr;*.m4a;*.snd"
+      System          =   -1  'True
       TabIndex        =   2
       Top             =   480
       Width           =   2415
+   End
+   Begin VB.Label lblNext 
+      BackStyle       =   0  '투명
+      Caption         =   "▶"
+      BeginProperty Font 
+         Name            =   "굴림"
+         Size            =   24
+         Charset         =   129
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   495
+      Left            =   7440
+      TabIndex        =   41
+      Top             =   4800
+      Width           =   495
+   End
+   Begin VB.Label lblBack 
+      BackStyle       =   0  '투명
+      Caption         =   "◀"
+      BeginProperty Font 
+         Name            =   "굴림"
+         Size            =   24
+         Charset         =   129
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   495
+      Left            =   7440
+      TabIndex        =   40
+      Top             =   3240
+      Width           =   495
+   End
+   Begin VB.Label Label8 
+      Alignment       =   2  '가운데 맞춤
+      BackStyle       =   0  '투명
+      Caption         =   "◀"
+      BeginProperty Font 
+         Name            =   "굴림"
+         Size            =   24
+         Charset         =   129
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   495
+      Left            =   8880
+      TabIndex        =   15
+      ToolTipText     =   "맨 앞으로"
+      Top             =   3000
+      Width           =   495
+   End
+   Begin VB.Label Label13 
+      BackStyle       =   0  '투명
+      Caption         =   "|"
+      BeginProperty Font 
+         Name            =   "굴림"
+         Size            =   24
+         Charset         =   129
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   360
+      Left            =   8880
+      TabIndex        =   39
+      Top             =   3045
+      Width           =   255
    End
    Begin VB.Image imgVisBalls 
       Height          =   1725
@@ -458,7 +534,7 @@ Begin VB.Form Form1
    Begin WMPLibCtl.WindowsMediaPlayer mplayer 
       Height          =   240
       Left            =   4800
-      TabIndex        =   33
+      TabIndex        =   28
       Top             =   6480
       Visible         =   0   'False
       Width           =   300
@@ -501,16 +577,16 @@ Begin VB.Form Form1
          Strikethrough   =   0   'False
       EndProperty
       Height          =   495
-      Left            =   7440
-      TabIndex        =   26
-      Top             =   3360
+      Left            =   8760
+      TabIndex        =   21
+      Top             =   5160
       Width           =   735
    End
    Begin VB.Label mutev 
       Caption         =   "0"
       Height          =   495
       Left            =   11040
-      TabIndex        =   25
+      TabIndex        =   20
       Top             =   480
       Width           =   855
    End
@@ -531,8 +607,8 @@ Begin VB.Form Form1
       EndProperty
       Height          =   495
       Left            =   6000
-      TabIndex        =   24
-      Top             =   4080
+      TabIndex        =   19
+      Top             =   4020
       Width           =   1575
    End
    Begin VB.Label CommandButton9 
@@ -551,8 +627,8 @@ Begin VB.Form Form1
       EndProperty
       Height          =   495
       Left            =   6000
-      TabIndex        =   23
-      Top             =   4080
+      TabIndex        =   18
+      Top             =   4020
       Visible         =   0   'False
       Width           =   1575
    End
@@ -570,9 +646,9 @@ Begin VB.Form Form1
       EndProperty
       ForeColor       =   &H000000FF&
       Height          =   495
-      Left            =   7440
-      TabIndex        =   22
-      Top             =   4800
+      Left            =   5640
+      TabIndex        =   17
+      Top             =   3240
       Width           =   495
    End
    Begin VB.Label Label10 
@@ -589,70 +665,9 @@ Begin VB.Form Form1
       EndProperty
       Height          =   375
       Left            =   5640
-      TabIndex        =   21
+      TabIndex        =   16
       Top             =   4800
       Width           =   375
-   End
-   Begin VB.Label Label8 
-      Alignment       =   2  '가운데 맞춤
-      BackStyle       =   0  '투명
-      Caption         =   "◀"
-      BeginProperty Font 
-         Name            =   "굴림"
-         Size            =   24
-         Charset         =   129
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   495
-      Left            =   5640
-      TabIndex        =   20
-      ToolTipText     =   "맨 앞으로"
-      Top             =   3240
-      Width           =   495
-   End
-   Begin VB.Label Label11 
-      BackStyle       =   0  '투명
-      Caption         =   "75% >"
-      Height          =   255
-      Left            =   9000
-      TabIndex        =   17
-      Top             =   4680
-      Width           =   615
-   End
-   Begin VB.Label Label9 
-      Caption         =   "100% >"
-      Height          =   255
-      Left            =   8880
-      TabIndex        =   14
-      Top             =   5040
-      Width           =   615
-   End
-   Begin VB.Label Label7 
-      Caption         =   "50% >"
-      Height          =   255
-      Left            =   9000
-      TabIndex        =   13
-      Top             =   4320
-      Width           =   615
-   End
-   Begin VB.Label Label6 
-      Caption         =   "25% >"
-      Height          =   255
-      Left            =   9000
-      TabIndex        =   12
-      Top             =   3960
-      Width           =   615
-   End
-   Begin VB.Label Label5 
-      Caption         =   " 0% >"
-      Height          =   255
-      Left            =   9000
-      TabIndex        =   11
-      Top             =   3600
-      Width           =   615
    End
    Begin VB.Label Label4 
       Caption         =   "음량"
@@ -695,21 +710,21 @@ Begin VB.Form Form1
       Top             =   2040
       Width           =   735
    End
-   Begin VB.Image Image1 
-      Height          =   2760
-      Left            =   5040
-      Picture         =   "main.frx":226A1A
-      Stretch         =   -1  'True
-      Top             =   2880
-      Width           =   3465
-   End
    Begin VB.Image imgVizBlank 
       Height          =   1725
       Left            =   5040
-      Picture         =   "main.frx":229E34
+      Picture         =   "main.frx":226A1A
       Stretch         =   -1  'True
       Top             =   120
       Width           =   4935
+   End
+   Begin VB.Image imgControllerBackground 
+      Height          =   2775
+      Left            =   5040
+      Picture         =   "main.frx":2EC07C
+      Stretch         =   -1  'True
+      Top             =   2880
+      Width           =   3495
    End
    Begin VB.Menu file 
       Caption         =   "파일(&F)"
@@ -763,13 +778,13 @@ End Sub
 
 Private Sub Command2_Click()
 On Error Resume Next
-    mplayer.settings.volume = mplayer.settings.volume + 5
+    mplayer.settings.volume = mplayer.settings.volume - 5
     Slider2.Value = Slider2.Value + 5
 End Sub
 
 Private Sub Command3_Click()
 On Error Resume Next
-    mplayer.settings.volume = mplayer.settings.volume - 5
+    mplayer.settings.volume = mplayer.settings.volume + 5
     Slider2.Value = Slider2.Value - 5
 End Sub
 
@@ -947,6 +962,14 @@ Slider2.Value = 100
 mplayer.settings.volume = 100
 End Sub
 
+Private Sub lblBack_Click()
+    mplayer.Controls.Previous
+End Sub
+
+Private Sub lblNext_Click()
+    mplayer.Controls.Next
+End Sub
+
 Private Sub log_Click()
     ulog.Show
 End Sub
@@ -1012,13 +1035,14 @@ End Sub
 
 Private Sub Slider2_Change()
 On Error Resume Next
-    mplayer.settings.volume = Slider2.Value
-    timVizManager.Interval = 100 + (100 - Slider2.Value)
+    mplayer.settings.volume = (100 - Slider2.Value)
+    timVizManager.Interval = 100 + Slider2.Value
 End Sub
 
 Private Sub Slider2_Scroll()
 On Error Resume Next
-    mplayer.settings.volume = Slider2.Value
+    mplayer.settings.volume = (100 - Slider2.Value)
+    timVizManager.Interval = 100 + Slider2.Value
 End Sub
 
 Private Sub Timer1_Timer()
