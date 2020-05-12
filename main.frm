@@ -5,14 +5,19 @@ Begin VB.Form Form1
    Caption         =   "오디오 재생기"
    ClientHeight    =   6135
    ClientLeft      =   225
-   ClientTop       =   870
-   ClientWidth     =   10080
+   ClientTop       =   810
+   ClientWidth     =   10065
    Icon            =   "main.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    ScaleHeight     =   6135
-   ScaleWidth      =   10080
+   ScaleWidth      =   10065
    StartUpPosition =   3  'Windows 기본값
+   Begin VB.Timer Timer2 
+      Interval        =   90
+      Left            =   10440
+      Top             =   2880
+   End
    Begin VB.Frame Frame1 
       Height          =   2295
       Left            =   120
@@ -95,9 +100,9 @@ Begin VB.Form Form1
       Top             =   1800
    End
    Begin VB.Timer timVizManager 
-      Interval        =   90
+      Interval        =   150
       Left            =   10440
-      Top             =   1440
+      Top             =   4560
    End
    Begin VB.CommandButton CommandButton7 
       Caption         =   "60>"
@@ -193,8 +198,8 @@ Begin VB.Form Form1
       Left            =   0
       TabIndex        =   9
       Top             =   5760
-      Width           =   10080
-      _ExtentX        =   17780
+      Width           =   10065
+      _ExtentX        =   17754
       _ExtentY        =   661
       Style           =   1
       SimpleText      =   "준비"
@@ -256,6 +261,825 @@ Begin VB.Form Form1
       TabIndex        =   2
       Top             =   480
       Width           =   2415
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   91
+      Left            =   5040
+      Picture         =   "main.frx":0442
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   90
+      Left            =   5040
+      Picture         =   "main.frx":18BE
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   89
+      Left            =   5040
+      Picture         =   "main.frx":2C72
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   88
+      Left            =   5040
+      Picture         =   "main.frx":4053
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   87
+      Left            =   5040
+      Picture         =   "main.frx":52B2
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   86
+      Left            =   5040
+      Picture         =   "main.frx":639C
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   85
+      Left            =   5040
+      Picture         =   "main.frx":7498
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   84
+      Left            =   5040
+      Picture         =   "main.frx":8736
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   83
+      Left            =   5040
+      Picture         =   "main.frx":9ACC
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   82
+      Left            =   5040
+      Picture         =   "main.frx":AE91
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   81
+      Left            =   5040
+      Picture         =   "main.frx":C239
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   80
+      Left            =   5040
+      Picture         =   "main.frx":D6EF
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   79
+      Left            =   5040
+      Picture         =   "main.frx":EC3F
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   78
+      Left            =   5040
+      Picture         =   "main.frx":1009D
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   77
+      Left            =   5040
+      Picture         =   "main.frx":11507
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   76
+      Left            =   5040
+      Picture         =   "main.frx":12964
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   75
+      Left            =   5040
+      Picture         =   "main.frx":13DC3
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   74
+      Left            =   5040
+      Picture         =   "main.frx":1523A
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   73
+      Left            =   5040
+      Picture         =   "main.frx":16967
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   72
+      Left            =   5040
+      Picture         =   "main.frx":1812B
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   71
+      Left            =   5040
+      Picture         =   "main.frx":1954C
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   70
+      Left            =   5040
+      Picture         =   "main.frx":1A96D
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   69
+      Left            =   5040
+      Picture         =   "main.frx":1BDFC
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   68
+      Left            =   5040
+      Picture         =   "main.frx":1D1AC
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   67
+      Left            =   5040
+      Picture         =   "main.frx":1E63B
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   66
+      Left            =   5040
+      Picture         =   "main.frx":1F9EB
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   65
+      Left            =   5040
+      Picture         =   "main.frx":20E8B
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   64
+      Left            =   5040
+      Picture         =   "main.frx":2221F
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   63
+      Left            =   5040
+      Picture         =   "main.frx":235BD
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   62
+      Left            =   5040
+      Picture         =   "main.frx":24948
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   61
+      Left            =   5040
+      Picture         =   "main.frx":25DD2
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   60
+      Left            =   5040
+      Picture         =   "main.frx":27227
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   59
+      Left            =   5040
+      Picture         =   "main.frx":28675
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   58
+      Left            =   5040
+      Picture         =   "main.frx":29A9D
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   57
+      Left            =   5040
+      Picture         =   "main.frx":2AE93
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   56
+      Left            =   5040
+      Picture         =   "main.frx":2C27A
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   55
+      Left            =   5040
+      Picture         =   "main.frx":2D65F
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   54
+      Left            =   5040
+      Picture         =   "main.frx":2EA4C
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   53
+      Left            =   5040
+      Picture         =   "main.frx":2FDF9
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   52
+      Left            =   5040
+      Picture         =   "main.frx":311AD
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   51
+      Left            =   5040
+      Picture         =   "main.frx":32545
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   50
+      Left            =   5040
+      Picture         =   "main.frx":3392D
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   49
+      Left            =   5040
+      Picture         =   "main.frx":34E46
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   48
+      Left            =   5040
+      Picture         =   "main.frx":3622A
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   47
+      Left            =   5040
+      Picture         =   "main.frx":37632
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   46
+      Left            =   5040
+      Picture         =   "main.frx":38A67
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   45
+      Left            =   5040
+      Picture         =   "main.frx":39E64
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   44
+      Left            =   5040
+      Picture         =   "main.frx":3B1FC
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   43
+      Left            =   5040
+      Picture         =   "main.frx":3C5B7
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   42
+      Left            =   5040
+      Picture         =   "main.frx":3D842
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   41
+      Left            =   5040
+      Picture         =   "main.frx":3E6E3
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   40
+      Left            =   5040
+      Picture         =   "main.frx":3F73B
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   39
+      Left            =   5040
+      Picture         =   "main.frx":409F0
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   38
+      Left            =   5040
+      Picture         =   "main.frx":41D3A
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   37
+      Left            =   5040
+      Picture         =   "main.frx":430BE
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   36
+      Left            =   5040
+      Picture         =   "main.frx":444C3
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   35
+      Left            =   5040
+      Picture         =   "main.frx":457E0
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   34
+      Left            =   5040
+      Picture         =   "main.frx":460C1
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   33
+      Left            =   5040
+      Picture         =   "main.frx":46CD1
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   32
+      Left            =   5040
+      Picture         =   "main.frx":47B8E
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   31
+      Left            =   5040
+      Picture         =   "main.frx":48BC4
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   30
+      Left            =   5040
+      Picture         =   "main.frx":49CF0
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   29
+      Left            =   5040
+      Picture         =   "main.frx":4B00A
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   28
+      Left            =   5040
+      Picture         =   "main.frx":4C3BE
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   27
+      Left            =   5040
+      Picture         =   "main.frx":4D8FD
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   26
+      Left            =   5040
+      Picture         =   "main.frx":4ED86
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   25
+      Left            =   5040
+      Picture         =   "main.frx":50248
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   24
+      Left            =   5040
+      Picture         =   "main.frx":516B3
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   23
+      Left            =   5040
+      Picture         =   "main.frx":52A79
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   22
+      Left            =   5040
+      Picture         =   "main.frx":53E72
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   21
+      Left            =   5040
+      Picture         =   "main.frx":552A2
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   20
+      Left            =   5040
+      Picture         =   "main.frx":5674C
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   19
+      Left            =   5040
+      Picture         =   "main.frx":57B5E
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   18
+      Left            =   5040
+      Picture         =   "main.frx":58EC2
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   17
+      Left            =   5040
+      Picture         =   "main.frx":5A2CC
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   16
+      Left            =   5040
+      Picture         =   "main.frx":5B6E6
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   15
+      Left            =   5040
+      Picture         =   "main.frx":5CB23
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   14
+      Left            =   5040
+      Picture         =   "main.frx":5DFCA
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   13
+      Left            =   5040
+      Picture         =   "main.frx":5F47B
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   12
+      Left            =   5040
+      Picture         =   "main.frx":608BB
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   11
+      Left            =   5040
+      Picture         =   "main.frx":61C94
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   10
+      Left            =   5040
+      Picture         =   "main.frx":63055
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   9
+      Left            =   5040
+      Picture         =   "main.frx":644E6
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   8
+      Left            =   5040
+      Picture         =   "main.frx":658F9
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   7
+      Left            =   5040
+      Picture         =   "main.frx":66D5A
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   6
+      Left            =   5040
+      Picture         =   "main.frx":681C3
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   5
+      Left            =   5040
+      Picture         =   "main.frx":69682
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   4
+      Left            =   5040
+      Picture         =   "main.frx":6A9D5
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   3
+      Left            =   5040
+      Picture         =   "main.frx":6B9AF
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   2
+      Left            =   5040
+      Picture         =   "main.frx":6C895
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   1
+      Left            =   5040
+      Picture         =   "main.frx":6D521
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
    End
    Begin VB.Label lblNext 
       BackStyle       =   0  '투명
@@ -333,200 +1157,9 @@ Begin VB.Form Form1
    End
    Begin VB.Image imgVisBalls 
       Height          =   1725
-      Index           =   19
-      Left            =   5040
-      Picture         =   "main.frx":0442
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1725
-      Index           =   18
-      Left            =   5040
-      Picture         =   "main.frx":1948C
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1725
-      Index           =   17
-      Left            =   5040
-      Picture         =   "main.frx":324FA
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1725
-      Index           =   16
-      Left            =   5040
-      Picture         =   "main.frx":4C905
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1725
-      Index           =   15
-      Left            =   5040
-      Picture         =   "main.frx":66C7E
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1725
-      Index           =   14
-      Left            =   5040
-      Picture         =   "main.frx":80F3B
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1725
-      Index           =   13
-      Left            =   5040
-      Picture         =   "main.frx":C43BA
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1725
-      Index           =   12
-      Left            =   5040
-      Picture         =   "main.frx":DD4BF
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1725
-      Index           =   11
-      Left            =   5040
-      Picture         =   "main.frx":F7B79
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1725
-      Index           =   10
-      Left            =   5040
-      Picture         =   "main.frx":110E4D
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1725
-      Index           =   9
-      Left            =   5040
-      Picture         =   "main.frx":12A0CE
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1725
-      Index           =   8
-      Left            =   5040
-      Picture         =   "main.frx":1432EB
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1725
-      Index           =   7
-      Left            =   5040
-      Picture         =   "main.frx":15D737
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1725
-      Index           =   6
-      Left            =   5040
-      Picture         =   "main.frx":1762F1
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1725
-      Index           =   5
-      Left            =   5040
-      Picture         =   "main.frx":18E35F
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1725
-      Index           =   4
-      Left            =   5040
-      Picture         =   "main.frx":1A5E89
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1725
-      Index           =   3
-      Left            =   5040
-      Picture         =   "main.frx":1BFF43
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1725
-      Index           =   2
-      Left            =   5040
-      Picture         =   "main.frx":1DA07C
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1725
-      Index           =   1
-      Left            =   5040
-      Picture         =   "main.frx":1F32A1
-      Stretch         =   -1  'True
-      Top             =   120
-      Visible         =   0   'False
-      Width           =   4935
-   End
-   Begin VB.Image imgVisBalls 
-      Height          =   1720
       Index           =   0
       Left            =   5040
-      Picture         =   "main.frx":20C4DF
-      Stretch         =   -1  'True
+      Picture         =   "main.frx":6DE22
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -713,7 +1346,7 @@ Begin VB.Form Form1
    Begin VB.Image imgVizBlank 
       Height          =   1725
       Left            =   5040
-      Picture         =   "main.frx":226A1A
+      Picture         =   "main.frx":6E473
       Stretch         =   -1  'True
       Top             =   120
       Width           =   4935
@@ -721,7 +1354,7 @@ Begin VB.Form Form1
    Begin VB.Image imgControllerBackground 
       Height          =   2775
       Left            =   5040
-      Picture         =   "main.frx":2EC07C
+      Picture         =   "main.frx":133AD5
       Stretch         =   -1  'True
       Top             =   2880
       Width           =   3495
@@ -740,10 +1373,29 @@ Begin VB.Form Form1
    End
    Begin VB.Menu mnuOptions 
       Caption         =   "옵션(&O)"
-      Visible         =   0   'False
       Begin VB.Menu mnuOptionsLoop 
          Caption         =   "반복(&L)"
          Checked         =   -1  'True
+         Visible         =   0   'False
+      End
+      Begin VB.Menu mnuSep43555 
+         Caption         =   "-"
+         Visible         =   0   'False
+      End
+      Begin VB.Menu mnuAnims 
+         Caption         =   "애니메이션(&A)"
+         Begin VB.Menu mnuAnimsOption 
+            Caption         =   "기본효과 &1"
+            Index           =   1
+         End
+         Begin VB.Menu mnuAnimsOption 
+            Caption         =   "기본효과 &2"
+            Index           =   2
+         End
+         Begin VB.Menu mnuAnimsOption 
+            Caption         =   "기본효과 &3"
+            Index           =   3
+         End
       End
    End
    Begin VB.Menu help 
@@ -764,6 +1416,7 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 
 Dim vi As Integer
+Dim vizidx As Integer
 
 Private Sub about_Click()
     frmAbout.Show
@@ -878,7 +1531,9 @@ End Sub
 
 Private Sub Form_Load()
 On Error Resume Next
+    vizidx = CInt(GetSetting(App.Title, "Options", "Animation", 1))
     vi = 0
+    mnuAnimsOption_Click vizidx
     File1.Path = GetSetting(App.Title, "Config", "Path", "C:\WINDOWS\MEDIA\")
     Text1.Text = GetSetting(App.Title, "Config", "Path", "C:\WINDOWS\MEDIA\")
     Slider1.Value = 0
@@ -974,6 +1629,26 @@ Private Sub log_Click()
     ulog.Show
 End Sub
 
+Private Sub mnuAnimsOption_Click(Index As Integer)
+    SaveSetting App.Title, "Options", "Animation", Index
+    vizidx = Index
+    
+    Select Case Index
+        Case 1
+            imgVisBalls(vi).Visible = False
+            vi = 0
+            imgVisBalls(vi).Visible = True
+        Case 2
+            imgVisBalls(vi).Visible = False
+            vi = 36
+            imgVisBalls(vi).Visible = True
+        Case 3
+            imgVisBalls(vi).Visible = False
+            vi = 56
+            imgVisBalls(vi).Visible = True
+    End Select
+End Sub
+
 Private Sub mnuOptionsLoop_Click()
     mnuOptionsLoop.Checked = Not mnuOptionsLoop.Checked
     mplayer.settings.setMode "loop", mnuOptionsLoop.Checked
@@ -1056,8 +1731,18 @@ Private Sub timVizManager_Timer()
     If Timer1.Enabled = True Then
         imgVizBlank.Visible = True
         imgVisBalls(vi).Visible = False
+        
         vi = vi + 1
-        If vi > 19 Then vi = 0
+        
+        Select Case vizidx
+            Case 1
+                If vi > 35 Then vi = 0
+            Case 2
+                If vi > 55 Then vi = 36
+            Case 3
+                If vi > 91 Then vi = 56
+        End Select
+        
         imgVisBalls(vi).Visible = True
         'Debug.Print vi
     Else
