@@ -5,7 +5,7 @@ Begin VB.Form Form1
    Caption         =   "오디오 재생기"
    ClientHeight    =   6135
    ClientLeft      =   225
-   ClientTop       =   810
+   ClientTop       =   825
    ClientWidth     =   10065
    Icon            =   "main.frx":0000
    LinkTopic       =   "Form1"
@@ -13,6 +13,12 @@ Begin VB.Form Form1
    ScaleHeight     =   6135
    ScaleWidth      =   10065
    StartUpPosition =   3  'Windows 기본값
+   Begin VB.Timer timSR 
+      Enabled         =   0   'False
+      Interval        =   100
+      Left            =   9000
+      Top             =   4320
+   End
    Begin VB.Timer Timer2 
       Interval        =   90
       Left            =   10440
@@ -207,7 +213,6 @@ Begin VB.Form Form1
       BeginProperty Panels {0713E89E-850A-101B-AFC0-4210102A8DA7} 
          NumPanels       =   1
          BeginProperty Panel1 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
-            Key             =   ""
             Object.Tag             =   ""
          EndProperty
       EndProperty
@@ -1371,6 +1376,15 @@ Begin VB.Form Form1
          Caption         =   "종료(&X)"
       End
    End
+   Begin VB.Menu mnuPlay 
+      Caption         =   "재생(&P)"
+      Begin VB.Menu mnuPlayRepeatSection 
+         Caption         =   "구간 반복(&S)..."
+      End
+      Begin VB.Menu mnuPlayCancelSectionRepeat 
+         Caption         =   "구간 반복 해제(&E)"
+      End
+   End
    Begin VB.Menu mnuOptions 
       Caption         =   "옵션(&O)"
       Begin VB.Menu mnuOptionsLoop 
@@ -1417,6 +1431,9 @@ Attribute VB_Exposed = False
 
 Dim vi As Integer
 Dim vizidx As Integer
+
+Public SRS As Double
+Public SRE As Double
 
 Private Sub about_Click()
     frmAbout.Show
@@ -1544,6 +1561,9 @@ On Error Resume Next
     ToggleButton1.Caption = "◀))"
     Dir1.Path = GetSetting(App.Title, "Config", "Path", "C:\WINDOWS\MEDIA\")
     mplayer.enableContextMenu = False
+    
+    SRS = -1
+    SRE = -1
 End Sub
 
 Private Sub Form_Resize()
@@ -1654,6 +1674,16 @@ Private Sub mnuOptionsLoop_Click()
     mplayer.settings.setMode "loop", mnuOptionsLoop.Checked
 End Sub
 
+Private Sub mnuPlayCancelSectionRepeat_Click()
+    SRS = -1
+    SRE = -1
+    timSR.Enabled = False
+End Sub
+
+Private Sub mnuPlayRepeatSection_Click()
+    frmSectionRepeat.Show '모달 일부러 안 함
+End Sub
+
 Private Sub mplayer_MediaChange(ByVal Item As Object)
     On Error Resume Next
     'status.Caption = "1"
@@ -1724,6 +1754,12 @@ Private Sub Timer1_Timer()
 On Error Resume Next
     Label1.Caption = Fix(mplayer.Controls.currentPosition * 100) / 100
     Slider1.Value = mplayer.Controls.currentPosition
+End Sub
+
+Private Sub timSR_Timer()
+    If mplayer.Controls.currentPosition > SRE Then
+        mplayer.Controls.currentPosition = SRS
+    End If
 End Sub
 
 Private Sub timVizManager_Timer()

@@ -1,0 +1,25 @@
+1167 행: mplayer 컨트롤의 WMPLibCtl.WindowsMediaPlayer 클래스는 로드한 컨트롤 클래스가 아닙니다.
+1174 행: mplayer의 URL 속성 이름이 잘못되었습니다. 
+1175 행: mplayer의 rate 속성 이름이 잘못되었습니다. 
+1176 행: mplayer의 balance 속성 이름이 잘못되었습니다. 
+1177 행: mplayer의 currentPosition 속성 이름이 잘못되었습니다. 
+1178 행: mplayer의 defaultFrame 속성 이름이 잘못되었습니다. 
+1179 행: mplayer의 playCount 속성 이름이 잘못되었습니다. 
+1180 행: mplayer의 autoStart 속성 이름이 잘못되었습니다. 
+1181 행: mplayer의 currentMarker 속성 이름이 잘못되었습니다. 
+1182 행: mplayer의 invokeURLs 속성 이름이 잘못되었습니다. 
+1183 행: mplayer의 baseURL 속성 이름이 잘못되었습니다. 
+1184 행: mplayer의 volume 속성 이름이 잘못되었습니다. 
+1185 행: mplayer의 mute 속성 이름이 잘못되었습니다. 
+1186 행: mplayer의 uiMode 속성 이름이 잘못되었습니다. 
+1187 행: mplayer의 stretchToFit 속성 이름이 잘못되었습니다. 
+1188 행: mplayer의 windowlessVideo 속성 이름이 잘못되었습니다. 
+1190 행: mplayer의 enableContextMenu 속성 이름이 잘못되었습니다. 
+1191 행: mplayer의 fullScreen 속성 이름이 잘못되었습니다. 
+1192 행: mplayer의 SAMIStyle 속성 이름이 잘못되었습니다. 
+1193 행: mplayer의 SAMILang 속성 이름이 잘못되었습니다. 
+1194 행: mplayer의 SAMIFilename 속성 이름이 잘못되었습니다. 
+1195 행: mplayer의 captioningID 속성 이름이 잘못되었습니다. 
+1196 행: mplayer의 enableErrorDialogs 속성 이름이 잘못되었습니다. 
+1197 행: mplayer의 _cx 속성 이름이 잘못되었습니다. 
+1198 행: mplayer의 _cy 속성 이름이 잘못되었습니다. 
