@@ -213,6 +213,7 @@ Begin VB.Form Form1
       BeginProperty Panels {0713E89E-850A-101B-AFC0-4210102A8DA7} 
          NumPanels       =   1
          BeginProperty Panel1 {0713E89F-850A-101B-AFC0-4210102A8DA7} 
+            Key             =   ""
             Object.Tag             =   ""
          EndProperty
       EndProperty
@@ -261,7 +262,7 @@ Begin VB.Form Form1
       Height          =   2250
       Hidden          =   -1  'True
       Left            =   120
-      Pattern         =   "*.mp3;*.mid;*.wma;*.rmi;*.midi;*.mp1;*.mp2;*.mpg;*.mpeg;*.wav;*.wave;*.midi;*.rmi;*.wpl;*.aac;*.amr;*.m4a;*.snd"
+      Pattern         =   "*.bep;*.mp3;*.mid;*.wma;*.rmi;*.midi;*.mp1;*.mp2;*.mpg;*.mpeg;*.wav;*.wave;*.midi;*.rmi;*.wpl;*.aac;*.amr;*.m4a;*.snd"
       System          =   -1  'True
       TabIndex        =   2
       Top             =   480
@@ -269,7 +270,7 @@ Begin VB.Form Form1
    End
    Begin VB.Image imgVisBalls 
       Height          =   1725
-      Index           =   91
+      Index           =   110
       Left            =   5040
       Picture         =   "main.frx":0442
       Top             =   120
@@ -278,9 +279,180 @@ Begin VB.Form Form1
    End
    Begin VB.Image imgVisBalls 
       Height          =   1725
+      Index           =   109
+      Left            =   5040
+      Picture         =   "main.frx":12DD
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   108
+      Left            =   5040
+      Picture         =   "main.frx":213C
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   107
+      Left            =   5040
+      Picture         =   "main.frx":2F94
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   106
+      Left            =   5040
+      Picture         =   "main.frx":3E4C
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   105
+      Left            =   5040
+      Picture         =   "main.frx":4E77
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   104
+      Left            =   5040
+      Picture         =   "main.frx":5FDD
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   103
+      Left            =   5040
+      Picture         =   "main.frx":7239
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   102
+      Left            =   5040
+      Picture         =   "main.frx":8583
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   101
+      Left            =   5040
+      Picture         =   "main.frx":994F
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   100
+      Left            =   5040
+      Picture         =   "main.frx":AC4D
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   99
+      Left            =   5040
+      Picture         =   "main.frx":C3D0
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   98
+      Left            =   5040
+      Picture         =   "main.frx":DB81
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   97
+      Left            =   5040
+      Picture         =   "main.frx":EEE0
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   96
+      Left            =   5040
+      Picture         =   "main.frx":101B3
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   95
+      Left            =   5040
+      Picture         =   "main.frx":1136E
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   94
+      Left            =   5040
+      Picture         =   "main.frx":1249D
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   93
+      Left            =   5040
+      Picture         =   "main.frx":13429
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   92
+      Left            =   5040
+      Picture         =   "main.frx":14380
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
+      Index           =   91
+      Left            =   5040
+      Picture         =   "main.frx":15280
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   4935
+   End
+   Begin VB.Image imgVisBalls 
+      Height          =   1725
       Index           =   90
       Left            =   5040
-      Picture         =   "main.frx":18BE
+      Picture         =   "main.frx":166FC
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -289,7 +461,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   89
       Left            =   5040
-      Picture         =   "main.frx":2C72
+      Picture         =   "main.frx":17AB0
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -298,7 +470,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   88
       Left            =   5040
-      Picture         =   "main.frx":4053
+      Picture         =   "main.frx":18E91
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -307,7 +479,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   87
       Left            =   5040
-      Picture         =   "main.frx":52B2
+      Picture         =   "main.frx":1A0F0
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -316,7 +488,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   86
       Left            =   5040
-      Picture         =   "main.frx":639C
+      Picture         =   "main.frx":1B1DA
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -325,7 +497,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   85
       Left            =   5040
-      Picture         =   "main.frx":7498
+      Picture         =   "main.frx":1C2D6
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -334,7 +506,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   84
       Left            =   5040
-      Picture         =   "main.frx":8736
+      Picture         =   "main.frx":1D574
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -343,7 +515,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   83
       Left            =   5040
-      Picture         =   "main.frx":9ACC
+      Picture         =   "main.frx":1E90A
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -352,7 +524,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   82
       Left            =   5040
-      Picture         =   "main.frx":AE91
+      Picture         =   "main.frx":1FCCF
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -361,7 +533,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   81
       Left            =   5040
-      Picture         =   "main.frx":C239
+      Picture         =   "main.frx":21077
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -370,7 +542,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   80
       Left            =   5040
-      Picture         =   "main.frx":D6EF
+      Picture         =   "main.frx":2252D
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -379,7 +551,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   79
       Left            =   5040
-      Picture         =   "main.frx":EC3F
+      Picture         =   "main.frx":23A7D
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -388,7 +560,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   78
       Left            =   5040
-      Picture         =   "main.frx":1009D
+      Picture         =   "main.frx":24EDB
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -397,7 +569,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   77
       Left            =   5040
-      Picture         =   "main.frx":11507
+      Picture         =   "main.frx":26345
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -406,7 +578,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   76
       Left            =   5040
-      Picture         =   "main.frx":12964
+      Picture         =   "main.frx":277A2
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -415,7 +587,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   75
       Left            =   5040
-      Picture         =   "main.frx":13DC3
+      Picture         =   "main.frx":28C01
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -424,7 +596,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   74
       Left            =   5040
-      Picture         =   "main.frx":1523A
+      Picture         =   "main.frx":2A078
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -433,7 +605,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   73
       Left            =   5040
-      Picture         =   "main.frx":16967
+      Picture         =   "main.frx":2B7A5
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -442,7 +614,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   72
       Left            =   5040
-      Picture         =   "main.frx":1812B
+      Picture         =   "main.frx":2CF69
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -451,7 +623,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   71
       Left            =   5040
-      Picture         =   "main.frx":1954C
+      Picture         =   "main.frx":2E38A
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -460,7 +632,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   70
       Left            =   5040
-      Picture         =   "main.frx":1A96D
+      Picture         =   "main.frx":2F7AB
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -469,7 +641,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   69
       Left            =   5040
-      Picture         =   "main.frx":1BDFC
+      Picture         =   "main.frx":30C3A
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -478,7 +650,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   68
       Left            =   5040
-      Picture         =   "main.frx":1D1AC
+      Picture         =   "main.frx":31FEA
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -487,7 +659,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   67
       Left            =   5040
-      Picture         =   "main.frx":1E63B
+      Picture         =   "main.frx":33479
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -496,7 +668,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   66
       Left            =   5040
-      Picture         =   "main.frx":1F9EB
+      Picture         =   "main.frx":34829
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -505,7 +677,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   65
       Left            =   5040
-      Picture         =   "main.frx":20E8B
+      Picture         =   "main.frx":35CC9
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -514,7 +686,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   64
       Left            =   5040
-      Picture         =   "main.frx":2221F
+      Picture         =   "main.frx":3705D
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -523,7 +695,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   63
       Left            =   5040
-      Picture         =   "main.frx":235BD
+      Picture         =   "main.frx":383FB
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -532,7 +704,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   62
       Left            =   5040
-      Picture         =   "main.frx":24948
+      Picture         =   "main.frx":39786
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -541,7 +713,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   61
       Left            =   5040
-      Picture         =   "main.frx":25DD2
+      Picture         =   "main.frx":3AC10
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -550,7 +722,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   60
       Left            =   5040
-      Picture         =   "main.frx":27227
+      Picture         =   "main.frx":3C065
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -559,7 +731,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   59
       Left            =   5040
-      Picture         =   "main.frx":28675
+      Picture         =   "main.frx":3D4B3
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -568,7 +740,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   58
       Left            =   5040
-      Picture         =   "main.frx":29A9D
+      Picture         =   "main.frx":3E8DB
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -577,7 +749,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   57
       Left            =   5040
-      Picture         =   "main.frx":2AE93
+      Picture         =   "main.frx":3FCD1
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -586,7 +758,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   56
       Left            =   5040
-      Picture         =   "main.frx":2C27A
+      Picture         =   "main.frx":410B8
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -595,7 +767,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   55
       Left            =   5040
-      Picture         =   "main.frx":2D65F
+      Picture         =   "main.frx":4249D
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -604,7 +776,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   54
       Left            =   5040
-      Picture         =   "main.frx":2EA4C
+      Picture         =   "main.frx":4388A
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -613,7 +785,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   53
       Left            =   5040
-      Picture         =   "main.frx":2FDF9
+      Picture         =   "main.frx":44C37
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -622,7 +794,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   52
       Left            =   5040
-      Picture         =   "main.frx":311AD
+      Picture         =   "main.frx":45FEB
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -631,7 +803,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   51
       Left            =   5040
-      Picture         =   "main.frx":32545
+      Picture         =   "main.frx":47383
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -640,7 +812,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   50
       Left            =   5040
-      Picture         =   "main.frx":3392D
+      Picture         =   "main.frx":4876B
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -649,7 +821,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   49
       Left            =   5040
-      Picture         =   "main.frx":34E46
+      Picture         =   "main.frx":49C84
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -658,7 +830,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   48
       Left            =   5040
-      Picture         =   "main.frx":3622A
+      Picture         =   "main.frx":4B068
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -667,7 +839,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   47
       Left            =   5040
-      Picture         =   "main.frx":37632
+      Picture         =   "main.frx":4C470
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -676,7 +848,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   46
       Left            =   5040
-      Picture         =   "main.frx":38A67
+      Picture         =   "main.frx":4D8A5
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -685,7 +857,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   45
       Left            =   5040
-      Picture         =   "main.frx":39E64
+      Picture         =   "main.frx":4ECA2
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -694,7 +866,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   44
       Left            =   5040
-      Picture         =   "main.frx":3B1FC
+      Picture         =   "main.frx":5003A
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -703,7 +875,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   43
       Left            =   5040
-      Picture         =   "main.frx":3C5B7
+      Picture         =   "main.frx":513F5
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -712,7 +884,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   42
       Left            =   5040
-      Picture         =   "main.frx":3D842
+      Picture         =   "main.frx":52680
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -721,7 +893,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   41
       Left            =   5040
-      Picture         =   "main.frx":3E6E3
+      Picture         =   "main.frx":53521
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -730,7 +902,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   40
       Left            =   5040
-      Picture         =   "main.frx":3F73B
+      Picture         =   "main.frx":54579
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -739,7 +911,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   39
       Left            =   5040
-      Picture         =   "main.frx":409F0
+      Picture         =   "main.frx":5582E
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -748,7 +920,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   38
       Left            =   5040
-      Picture         =   "main.frx":41D3A
+      Picture         =   "main.frx":56B78
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -757,7 +929,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   37
       Left            =   5040
-      Picture         =   "main.frx":430BE
+      Picture         =   "main.frx":57EFC
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -766,7 +938,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   36
       Left            =   5040
-      Picture         =   "main.frx":444C3
+      Picture         =   "main.frx":59301
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -775,7 +947,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   35
       Left            =   5040
-      Picture         =   "main.frx":457E0
+      Picture         =   "main.frx":5A61E
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -784,7 +956,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   34
       Left            =   5040
-      Picture         =   "main.frx":460C1
+      Picture         =   "main.frx":5AEFF
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -793,7 +965,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   33
       Left            =   5040
-      Picture         =   "main.frx":46CD1
+      Picture         =   "main.frx":5BB0F
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -802,7 +974,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   32
       Left            =   5040
-      Picture         =   "main.frx":47B8E
+      Picture         =   "main.frx":5C9CC
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -811,7 +983,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   31
       Left            =   5040
-      Picture         =   "main.frx":48BC4
+      Picture         =   "main.frx":5DA02
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -820,7 +992,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   30
       Left            =   5040
-      Picture         =   "main.frx":49CF0
+      Picture         =   "main.frx":5EB2E
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -829,7 +1001,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   29
       Left            =   5040
-      Picture         =   "main.frx":4B00A
+      Picture         =   "main.frx":5FE48
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -838,7 +1010,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   28
       Left            =   5040
-      Picture         =   "main.frx":4C3BE
+      Picture         =   "main.frx":611FC
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -847,7 +1019,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   27
       Left            =   5040
-      Picture         =   "main.frx":4D8FD
+      Picture         =   "main.frx":6273B
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -856,7 +1028,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   26
       Left            =   5040
-      Picture         =   "main.frx":4ED86
+      Picture         =   "main.frx":63BC4
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -865,7 +1037,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   25
       Left            =   5040
-      Picture         =   "main.frx":50248
+      Picture         =   "main.frx":65086
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -874,7 +1046,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   24
       Left            =   5040
-      Picture         =   "main.frx":516B3
+      Picture         =   "main.frx":664F1
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -883,7 +1055,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   23
       Left            =   5040
-      Picture         =   "main.frx":52A79
+      Picture         =   "main.frx":678B7
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -892,7 +1064,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   22
       Left            =   5040
-      Picture         =   "main.frx":53E72
+      Picture         =   "main.frx":68CB0
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -901,7 +1073,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   21
       Left            =   5040
-      Picture         =   "main.frx":552A2
+      Picture         =   "main.frx":6A0E0
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -910,7 +1082,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   20
       Left            =   5040
-      Picture         =   "main.frx":5674C
+      Picture         =   "main.frx":6B58A
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -919,7 +1091,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   19
       Left            =   5040
-      Picture         =   "main.frx":57B5E
+      Picture         =   "main.frx":6C99C
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -928,7 +1100,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   18
       Left            =   5040
-      Picture         =   "main.frx":58EC2
+      Picture         =   "main.frx":6DD00
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -937,7 +1109,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   17
       Left            =   5040
-      Picture         =   "main.frx":5A2CC
+      Picture         =   "main.frx":6F10A
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -946,7 +1118,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   16
       Left            =   5040
-      Picture         =   "main.frx":5B6E6
+      Picture         =   "main.frx":70524
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -955,7 +1127,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   15
       Left            =   5040
-      Picture         =   "main.frx":5CB23
+      Picture         =   "main.frx":71961
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -964,7 +1136,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   14
       Left            =   5040
-      Picture         =   "main.frx":5DFCA
+      Picture         =   "main.frx":72E08
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -973,7 +1145,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   13
       Left            =   5040
-      Picture         =   "main.frx":5F47B
+      Picture         =   "main.frx":742B9
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -982,7 +1154,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   12
       Left            =   5040
-      Picture         =   "main.frx":608BB
+      Picture         =   "main.frx":756F9
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -991,7 +1163,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   11
       Left            =   5040
-      Picture         =   "main.frx":61C94
+      Picture         =   "main.frx":76AD2
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -1000,7 +1172,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   10
       Left            =   5040
-      Picture         =   "main.frx":63055
+      Picture         =   "main.frx":77E93
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -1009,7 +1181,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   9
       Left            =   5040
-      Picture         =   "main.frx":644E6
+      Picture         =   "main.frx":79324
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -1018,7 +1190,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   8
       Left            =   5040
-      Picture         =   "main.frx":658F9
+      Picture         =   "main.frx":7A737
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -1027,7 +1199,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   7
       Left            =   5040
-      Picture         =   "main.frx":66D5A
+      Picture         =   "main.frx":7BB98
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -1036,7 +1208,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   6
       Left            =   5040
-      Picture         =   "main.frx":681C3
+      Picture         =   "main.frx":7D001
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -1045,7 +1217,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   5
       Left            =   5040
-      Picture         =   "main.frx":69682
+      Picture         =   "main.frx":7E4C0
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -1054,7 +1226,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   4
       Left            =   5040
-      Picture         =   "main.frx":6A9D5
+      Picture         =   "main.frx":7F813
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -1063,7 +1235,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   3
       Left            =   5040
-      Picture         =   "main.frx":6B9AF
+      Picture         =   "main.frx":807ED
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -1072,7 +1244,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   2
       Left            =   5040
-      Picture         =   "main.frx":6C895
+      Picture         =   "main.frx":816D3
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -1081,7 +1253,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   1
       Left            =   5040
-      Picture         =   "main.frx":6D521
+      Picture         =   "main.frx":8235F
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -1164,7 +1336,7 @@ Begin VB.Form Form1
       Height          =   1725
       Index           =   0
       Left            =   5040
-      Picture         =   "main.frx":6DE22
+      Picture         =   "main.frx":82C60
       Top             =   120
       Visible         =   0   'False
       Width           =   4935
@@ -1351,7 +1523,7 @@ Begin VB.Form Form1
    Begin VB.Image imgVizBlank 
       Height          =   1725
       Left            =   5040
-      Picture         =   "main.frx":6E473
+      Picture         =   "main.frx":832B1
       Stretch         =   -1  'True
       Top             =   120
       Width           =   4935
@@ -1359,7 +1531,7 @@ Begin VB.Form Form1
    Begin VB.Image imgControllerBackground 
       Height          =   2775
       Left            =   5040
-      Picture         =   "main.frx":133AD5
+      Picture         =   "main.frx":148913
       Stretch         =   -1  'True
       Top             =   2880
       Width           =   3495
@@ -1409,6 +1581,10 @@ Begin VB.Form Form1
          Begin VB.Menu mnuAnimsOption 
             Caption         =   "기본효과 &3"
             Index           =   3
+         End
+         Begin VB.Menu mnuAnimsOption 
+            Caption         =   "기본효과 &4"
+            Index           =   4
          End
       End
    End
@@ -1666,6 +1842,10 @@ Private Sub mnuAnimsOption_Click(Index As Integer)
             imgVisBalls(vi).Visible = False
             vi = 56
             imgVisBalls(vi).Visible = True
+        Case 4
+            imgVisBalls(vi).Visible = False
+            vi = 92
+            imgVisBalls(vi).Visible = True
     End Select
 End Sub
 
@@ -1777,6 +1957,8 @@ Private Sub timVizManager_Timer()
                 If vi > 55 Then vi = 36
             Case 3
                 If vi > 91 Then vi = 56
+            Case 4
+                If vi > 110 Then vi = 92
         End Select
         
         imgVisBalls(vi).Visible = True
